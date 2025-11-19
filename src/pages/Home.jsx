@@ -6,6 +6,7 @@ import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 import { datacontext } from "../context/userData";
 
+
 const Home = () => {
   const navigate = useNavigate();   // taking navigate for navigating the pages
   const { todo, setTodo } = useContext(datacontext);  //this is my main state for api storing data..
