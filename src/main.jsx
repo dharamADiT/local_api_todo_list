@@ -6,16 +6,16 @@ import { BrowserRouter } from 'react-router-dom'
 
 
 import { ToastContainer } from 'react-toastify'
-import UserData from './context/userData.jsx'
+import MainData from './context/MainData.jsx'
 
 
 createRoot(document.getElementById('root')).render(
-    <UserData>
+    <MainData>
    <BrowserRouter>
     <App />
     <ToastContainer />
  </BrowserRouter>
  
 
- </UserData>
+ </MainData>
 )
