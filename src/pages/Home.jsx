@@ -3,7 +3,7 @@ import { deleteData, getData } from "../api/callingApi";
 import { MoonLoader } from "react-spinners";
 
 import { toast } from "react-toastify";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { dataContext } from "../context/MainData";
 
 
@@ -47,7 +47,7 @@ const Home = () => {
 
   // this is i  m crateing for updating data (put method)
   const UpdateHandler = (id) => {
-    navigate(`/update/`);
+    navigate(`/update/${id}`);
 
   };
 
@@ -78,6 +78,7 @@ const Home = () => {
           </p>
 
           <div className="flex gap-4 mt-4">
+           
             <button  
             //  making fuciton for updating my data 
               className="flex-1 py-2 bg-blue-500  cursor-pointer rounded-xl active:scale-105"
@@ -85,6 +86,7 @@ const Home = () => {
             >
               Edit
             </button>
+           
 
             <button
 

@@ -6,7 +6,7 @@ const Navbar = () => {
     <nav className='flex items-center   justify-center gap-10 py-6'>
         <NavLink className={(e)=>e.isActive? "text-red-400": ""} to="/">Home</NavLink>
         <NavLink className={(e)=>e.isActive? "text-red-400": ""} to="/user-create">Create user</NavLink>
-        <NavLink className={(e)=>e.isActive? "text-red-400": ""} to="/update">Update</NavLink>
+        {/* <NavLink className={(e)=>e.isActive? "text-red-400": ""} to="/update">Update</NavLink> */}
       
         </nav>
   )

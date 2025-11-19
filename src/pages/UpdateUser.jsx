@@ -1,7 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useForm } from 'react-hook-form';
+import { useParams } from 'react-router-dom';
+import { dataContext } from '../context/MainData';
 
 const UpdateUser = () => {
+ const {todo, setTodo }= useContext(dataContext)
+const params=useParams()
+
+const datatodo = todo.find((item)=> params.id ==  item.id)
+console.log("this is from updata file",datatodo)
+console.log(params.id)
 
 
   // useForm i using for form validation for better intraciton 
@@ -26,8 +34,8 @@ const submitHandler = (data) => {
     };
       
    
-  return (
-    <div className="flex justify-center items-center py-16 px-4 bg-gray-900">
+  return ( datatodo  ? (<div className="flex justify-center items-center py-16 px-4 bg-gray-900">
+      
   <div className="w-full max-w-md p-6 rounded-xl shadow-lg">
     
     <h2 className="mb-8 text-2xl text-center font-semibold">Update  ToDo</h2>
@@ -65,7 +73,8 @@ const submitHandler = (data) => {
       </div>
     </form>
   </div>
-</div>
+</div>): <p>Hello dharam </p>
+    
   )
 }
 
