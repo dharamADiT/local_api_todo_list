@@ -1,9 +1,10 @@
 import React, { useContext, useEffect, useState } from "react";
 import { deleteData, getData } from "../api/callingApi";
 import { MoonLoader } from "react-spinners";
-import { datacontext } from "../context/datacontext";
+
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
+import { datacontext } from "../context/userData";
 
 const Home = () => {
   const navigate = useNavigate();   // taking navigate for navigating the pages

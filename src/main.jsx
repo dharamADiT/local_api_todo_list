@@ -4,17 +4,18 @@ import './index.css'
 import App from './App.jsx'
 import { BrowserRouter } from 'react-router-dom'
 
-import DataContext from './context/DataContext.jsx'
+
 import { ToastContainer } from 'react-toastify'
+import UserData from './context/userData.jsx'
 
 
 createRoot(document.getElementById('root')).render(
-    <DataContext>
+    <UserData>
    <BrowserRouter>
     <App />
     <ToastContainer />
  </BrowserRouter>
  
 
- </DataContext>
+ </UserData>
 )

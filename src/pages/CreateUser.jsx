@@ -1,9 +1,10 @@
   import React, { useContext, useState } from "react";
   import { useForm } from "react-hook-form";
   import { toast } from "react-toastify";
-  import { datacontext } from "../context/datacontext";
+  
   import { useNavigate } from "react-router-dom";
   import { postData } from "../api/callingApi";
+import { datacontext } from "../context/userData";
 
   const CreateUser = () => {
     const { todo, setTodo } = useContext(datacontext);
