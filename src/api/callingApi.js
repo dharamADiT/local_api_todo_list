@@ -19,3 +19,6 @@ export const postData =(newData)=>{
     return callingApi.post("/posts", newData)
 }
 
+
+
+// put method

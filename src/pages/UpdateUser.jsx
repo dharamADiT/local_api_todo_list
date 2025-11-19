@@ -20,8 +20,8 @@ console.log(params.id)
         handleSubmit,
       } = useForm({
   defaultValues: {
-    title: '',
-    body: ''
+    title: datatodo.title,
+    body: datatodo.body
   }
 });
 
@@ -37,6 +37,7 @@ const submitHandler = (data) => {
   return ( datatodo  ? (<div className="flex justify-center items-center py-16 px-4 bg-gray-900">
       
   <div className="w-full max-w-md p-6 rounded-xl shadow-lg">
+    
     
     <h2 className="mb-8 text-2xl text-center font-semibold">Update  ToDo</h2>
 
