@@ -21,4 +21,8 @@ export const postData =(newData)=>{
 
 
 
+export const putData = (id, addData)=>{
+    return callingApi.put(`/posts/${id}`, addData)
+}
+
 // put method
