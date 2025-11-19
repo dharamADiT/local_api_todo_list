@@ -57,7 +57,7 @@ const submitHandler = (data) => {
       <div className="flex items-center justify-between gap-4">
         <button 
           type="submit"
-          className="flex-1 py-2 bg-blue-500 rounded-xl active:scale-105"
+          className="flex-1 py-2 bg-blue-500 cursor-pointer rounded-xl active:scale-105"
         >
           Update
         </button>

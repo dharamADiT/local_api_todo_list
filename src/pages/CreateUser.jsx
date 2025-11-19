@@ -4,12 +4,12 @@
   
   import { useNavigate } from "react-router-dom";
   import { postData } from "../api/callingApi";
-import { datacontext } from "../context/MainData";
+import { dataContext } from "../context/MainData";
 
 
 
   const CreateUser = () => {
-    const { todo, setTodo } = useContext(datacontext);
+    const { todo, setTodo } = useContext(dataContext);
     //taking my data from context compoent that i have made ..
 
 
@@ -90,7 +90,7 @@ import { datacontext } from "../context/MainData";
       <div className="flex items-center justify-between gap-4">
         <button
           type="submit"
-          className="flex-1 py-2 bg-blue-500 rounded-xl active:scale-105"
+          className="flex-1 cursor-pointer py-2 bg-blue-500 rounded-xl active:scale-105"
         >
           Create
         </button>
@@ -98,7 +98,7 @@ import { datacontext } from "../context/MainData";
         <button
           type="button"
           onClick={() => reset()}
-          className="flex-1 py-2 bg-gray-600 rounded-xl active:scale-105"
+          className="flex-1 py-2 cursor-pointer bg-gray-600 rounded-xl active:scale-105"
         >
           Reset
         </button>

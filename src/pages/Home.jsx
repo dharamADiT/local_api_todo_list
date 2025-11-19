@@ -4,13 +4,13 @@ import { MoonLoader } from "react-spinners";
 
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
-import { datacontext } from "../context/MainData";
+import { dataContext } from "../context/MainData";
 
 
 
 const Home = () => {
   const navigate = useNavigate();   // taking navigate for navigating the pages
-  const { todo, setTodo } = useContext(datacontext);  //this is my main state for api storing data..
+  const { todo, setTodo } = useContext(dataContext);  //this is my main state for api storing data..
 
   const [loading, setLoading] = useState(true); 
 
@@ -80,7 +80,7 @@ const Home = () => {
           <div className="flex gap-4 mt-4">
             <button  
             //  making fuciton for updating my data 
-              className="flex-1 py-2 bg-blue-500 rounded-xl active:scale-105"
+              className="flex-1 py-2 bg-blue-500  cursor-pointer rounded-xl active:scale-105"
               onClick={() => UpdateHandler(u.id)}
             >
               Edit
@@ -89,7 +89,7 @@ const Home = () => {
             <button
 
             // making fuction for delete the data form api and view component
-              className="flex-1 py-2 bg-red-500 rounded-xl active:scale-105"
+              className="flex-1 py-2 bg-red-500 rounded-xl cursor-pointer active:scale-105"
               onClick={() => DeleteHandler(u.id)}
             >
               Delete

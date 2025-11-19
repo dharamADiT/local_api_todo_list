@@ -1,12 +1,12 @@
 import React, { createContext, useState } from 'react'
-export const datacontext = createContext()
+export const dataContext = createContext()
 
 const UserData = (props) => {
     const [todo, setTodo] = useState([ "dharam"])
   return (
-    <datacontext.Provider  value={{todo, setTodo}}>
+    <dataContext.Provider  value={{todo, setTodo}}>
         {props.children}
-    </datacontext.Provider>
+    </dataContext.Provider>
   )
 }
 
