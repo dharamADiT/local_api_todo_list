@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { deleteData, getData } from "../api/callingApi";
 import { MoonLoader } from "react-spinners";
-import { datacontext } from "../context/dataContext";
+import { datacontext } from "../context/datacontext";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 
@@ -44,7 +44,7 @@ const Home = () => {
 
   // this is i  m crateing for updating data (put method)
   const UpdateHandler = (id) => {
-    navigate(`/update/${id}`);
+    navigate(`/update/`);
 
   };
 

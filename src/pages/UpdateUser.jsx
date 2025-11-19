@@ -1,7 +1,7 @@
 import React from 'react'
 import { useForm } from 'react-hook-form';
 
-const UpdateUser = (id) => {
+const UpdateUser = () => {
 
 
   // useForm i using for form validation for better intraciton 

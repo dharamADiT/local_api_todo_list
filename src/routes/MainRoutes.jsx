@@ -9,7 +9,7 @@ const MainRoutes = () => {
     <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/user-create' element={<CreateUser/>} />
-        <Route path='/update' element={<UpdateUser/>} />
+        <Route path='/update/' element={<UpdateUser/>} />
 
     </Routes>
   )
